@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  height: 600px;
+  margin: 50px 500px;
+}
+
+.calculator .calc-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #22252e;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.calculator .calc-result .math-result p {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: white;
+  font-size: 30px;
+}
+
+.calculator .calc-result .switch-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #292d37;
+  border-radius: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 40px;
+}
+
+.calculator .calc-result .switch-buttons i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.calculator .calc-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  background-color: #292d37;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.calculator .calc-buttons .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.calculator .calc-buttons .row button {
+  width: 70px;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 28px;
+  background-color: #272b33;
+  color: white;
+  cursor: pointer;
+}
+
+.calculator .calc-buttons .row button:nth-of-type(1) {
+  color: #2de9c6;
+}
+
+.calculator .calc-buttons .row:nth-of-type(4) button {
+  color: #f27a7a;
+}
